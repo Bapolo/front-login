@@ -1,6 +1,6 @@
 import FormCadastro from "./components/FormCadastro"
 import React, { Suspense } from "react"
-import { HashRouter, Routes, Route, BrowserRouter } from "react-router-dom"
+import { HashRouter, Routes, Route } from "react-router-dom"
 
 const PageCadastro = React.lazy(() => import("./components/FormCadastro.jsx"))
 const PageLogin = React.lazy(() => import("./components/FormLogin.jsx"))
@@ -8,14 +8,14 @@ const PageLogin = React.lazy(() => import("./components/FormLogin.jsx"))
 function App() {
 
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Suspense fallback={<div>carregando...</div>} >
         <Routes>
           <Route path="/" element={<PageCadastro />} />
           <Route path="/login" element={<PageLogin />} />
         </Routes>
       </Suspense>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 
