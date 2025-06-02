@@ -42,9 +42,9 @@ function FormLogin() {
                     <h2 className="text-3xl text-center mb-4">Fazer login</h2>
 
                     {erroMessage && <p className="text-red-500 text-sm">{erroMessage}</p>}
-                    <input ref={emailRef} className="border border-gray-200 my-1.5 p-2 outline-none focus:border-blue-700 transition-all rounded-md" type="email" placeholder="Email"  />
+                    <input ref={emailRef} className="border border-gray-200 my-1.5 p-2 outline-none focus:border-blue-700 transition-all rounded-md" type="email" placeholder="Email"  required/>
 
-                    <input ref={passwordRef} className="border border-gray-200 my-1.5 p-2 outline-none focus:border-blue-700 transition-all rounded-md" type="password" placeholder="Senha"  />
+                    <input ref={passwordRef} className="border border-gray-200 my-1.5 p-2 outline-none focus:border-blue-700 transition-all rounded-md" type="password" placeholder="Senha"  required/>
 
                     <button className="bg-blue-600 text-white py-2 px-8 text-center my-3 font-medium rounded-md hover:bg-blue-800 cursor-pointer">Login </button>
 
