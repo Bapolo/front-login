@@ -1,8 +1,9 @@
 import { useState } from "react"
 
 
-function Evento({ titulo, descricao, valorMeta, valorRecolhido }) {
+function Evento({ autor, titulo, descricao, valorMeta, valorRecolhido }) {
     const [evento, setEvento] = useState({
+        autor,
         titulo: "Vax pra beber",
         descricao: "Hoje vamos sair e beber pra esquecer",
         valorMeta: "2 000 000 kz",
