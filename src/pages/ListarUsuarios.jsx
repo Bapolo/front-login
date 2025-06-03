@@ -1,6 +1,7 @@
 import { use, useEffect, useState } from "react"
 import api from "../services/api"
 import { useNavigate } from "react-router-dom"
+import Footer from "../components/Footer"
 
 function ListarUsuarios() {
     const [users, setUsers] = useState([])
@@ -37,9 +38,7 @@ function ListarUsuarios() {
                 )}
             </ul>
 
-            <div className="p-6 bg-blue-700 text-white w-full">
-                <p className="text-center">Feito por Viris | &copy; 2025</p>
-            </div>
+            <Footer />
         </div>
     )
 }
