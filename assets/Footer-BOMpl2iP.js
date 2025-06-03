@@ -1,0 +1,1 @@
+import{j as e}from"./index-CAV59gEf.js";function r(){return e.jsx("div",{className:"p-4 bg-blue-700 text-white w-full mt-4",children:e.jsx("p",{className:"text-center",children:"Feito por Viris | © 2025"})})}export{r as F};
